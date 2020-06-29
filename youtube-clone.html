@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="youtuble-clone.css">
+    <link rel="stylesheet" href="youtube-clone.css">
+    <script src='youtube-clone.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5d9e164aff.js" crossorigin="anonymous"></script>
     <title>It's not YouTube</title>
@@ -20,9 +21,10 @@
         </div>
     </header>
     <section class="player">
-        <video src="video/video.mp4"></video>
+        <video controls src="video/movie.mp4"></video>
     </section>
-    <!-- video info -->
+    <div class="infoAndUpNext">
+            <!-- video info -->
     <section class="info">
         <!-- Metadata -->
         <div class="metadata">
@@ -32,31 +34,30 @@
                 <li>#jingoo2020</li>
             </ul>
             <div class="titleandbutton">
-                <span class="title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, sequi!</span>
+                <span class="title clamp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere et delectus recusandae commodi ad quibusdam obcaecati quas sunt eos consequuntur eius beatae minima id iusto quisquam eligendi nulla, incidunt molestiae!</span>
                 <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
             </div>
-            <div class="views">
-                <span class="views">1M views, 1 month ago</span>
-            </div>
+            <span class="views">1M views, 1 month ago</span>
         </div>
         <!-- Actions -->
-        <div class="action">
-            <li><button><i class="fas fa-thumbs-up"></i><span>1K</span></button></li>
-            <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
-            <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
-            <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+        <div class="actions">
+            <button><i class="fas fa-thumbs-up active"></i><span>1K</span></button>
+            <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+            <button><i class="fas fa-share"></i><span>Share</span></button>
+            <button><i class="fas fa-plus"></i><span>Save</span></button>
+            <button><i class="fas fa-flag"></i><span>Report</span></button>
         </div>
         <!-- Channel description -->
         <div class="channel">
             <div class="metadata">
-                <img src="image/myphoto.png" alt="">
+                <img src="images/myphoto.jpg" alt="">
                 <div class="info">
                     <span class="name">Jingoo TV</span>
                     <span class="subscribers">1M subscribers</span>
                 </div>
             </div>
             <div class="subscribe">
-
+                subscribe
             </div>
         </div>
     </section>
@@ -64,7 +65,7 @@
         <span class="title">Up next</span>
         <ul>
             <li class="item">
-                <img src="images/1.png" alt="">
+                <div class="img"> <img src="images/1.jpg" alt=""> </div>
                 <div class="info">
                     <span class="title">
                         Lorem ipsum dolor sit.
@@ -72,11 +73,10 @@
                     <span class="name">jingoo TV</span>
                     <span class="views">44K views</span>
                 </div>
-                <button class="moreBtn"></button>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
             </li>
-            <li class="item"></li>
             <li class="item">
-                <img src="images/2.png" alt="">
+                <div class="img"> <img src="images/2.jpg" alt=""> </div>
                 <div class="info">
                     <span class="title">
                         Lorem ipsum dolor sit. 2
@@ -86,9 +86,8 @@
                 </div>
                 <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
             </li>
-            <li class="item"></li>
             <li class="item">
-                <img src="images/3.png" alt="">
+                <div class="img"> <img src="images/3.jpg" alt=""> </div>
                 <div class="info">
                     <span class="title">
                         Lorem ipsum dolor sit.333333
@@ -96,9 +95,10 @@
                     <span class="name">jingoo TV</span>
                     <span class="views">44K views</span>
                 </div>
-                <button class="moreBtn"></button>
+                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
             </li>
         </ul>
     </section>
+    </div>
 </body>
 </html>
